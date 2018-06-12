@@ -66,7 +66,7 @@ public class TravelDetailActivity extends AppCompatActivity implements
             mMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback() {
                 @Override
                 public void onMapLoaded() {
-                    mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 30));
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 30),2000,null);
                 }
             });
         }
